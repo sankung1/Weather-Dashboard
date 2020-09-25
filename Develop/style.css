@@ -31,9 +31,6 @@ span{
     margin: 0 auto;
 }
 #five-days-forcast{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 1px;
     padding: 2.5em;
 }
 #forecast-header{
@@ -58,7 +55,10 @@ span{
 }
 .future-forecast{
     background-color: #0396ff;
+    text-align: left;
     color: white;
-    padding: 1.5em;
+    /* padding: 1.5em; */
     border-radius: .4em;
+    margin-top: 2px;
+    margin-right: 1.1em;
 }

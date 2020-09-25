@@ -1,11 +1,11 @@
 let apiKey = "&appid=df40e453f18e8b1150a67320b38cc787";
 
 let currentDay = moment().format(" D/ M/ Y");
-let nextDay = moment().add(1, "days").format(" D/ M/ Y");
-let thirdDay = moment().add(2, "days").format(" D/ M/ Y");
-let fourthDay = moment().add(3, "days").format(" D/ M/ Y");
-let fifthday = moment().add(4, "days").format(" D/ M/ Y");
-let sixthDay = moment().add(5, "days").format(" D/ M/ Y");
+let nextDay = moment().add(1, "days").format(" D/ M/ YY");
+let thirdDay = moment().add(2, "days").format(" D/ M/ YY");
+let fourthDay = moment().add(3, "days").format(" D/ M/ YY");
+let fifthday = moment().add(4, "days").format(" D/ M/ YY");
+let sixthDay = moment().add(5, "days").format(" D/ M/ YY");
 
 let savedInputs = [];
 let mySearchHistory = localStorage.getItem("searchHistroy");
@@ -139,7 +139,7 @@ function foreHeader() {
 function day1Div(object) {
     $("#five-days-forcast").empty();
     // create Day one div
-    let div = $("<div class= 'future-forecast'>");
+    let div = $("<div class= 'col-md-2 future-forecast'>");
     let date = $("<p>");
     date.text(nextDay);
     let img = $("<img>");
@@ -156,7 +156,7 @@ function day1Div(object) {
 
 function day2Div(object) {
     // create day 2 div
-    let div = $("<div class= 'future-forecast'>");
+    let div = $("<div class= 'col-md-2 future-forecast'>");
     let date = $("<p>");
     date.text(thirdDay);
     let img = $("<img>");
@@ -173,7 +173,7 @@ function day2Div(object) {
 
 function day3Div(object) {
     //create day 3 div
-    let div = $("<div class= 'future-forecast'>");
+    let div = $("<div class= 'col-md-2 future-forecast'>");
     let date = $("<p>");
     date.text(fourthDay);
     let img = $("<img>");
@@ -189,7 +189,7 @@ function day3Div(object) {
 }
 
 function day4Div(object) {
-    let div = $("<div class= 'future-forecast'>");
+    let div = $("<div class= 'col-md-2 future-forecast'>");
     let date = $("<p>");
     date.text(fifthday);
     let img = $("<img>");
@@ -205,7 +205,7 @@ function day4Div(object) {
 }
 
 function day5Div(object) {
-    let div = $("<div class= 'future-forecast'>");
+    let div = $("<div class= 'col-md-2 future-forecast'>");
     let date = $("<p>");
     date.text(sixthDay);
     let img = $("<img>");
